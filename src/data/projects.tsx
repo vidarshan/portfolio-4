@@ -541,7 +541,7 @@ export const projectsArchive = [
       "An Enterprise Resource Planning application for a car service center, which is used to manage their day-to-day workflow, such as managing service operations, maintaining employee records, inventory control and tracking cash inflows and outflows.",
     image:
       "https://res.cloudinary.com/dury4s2jk/image/upload/v1685977248/carmax_kjhcba.webp",
-    demo: "https://silly-villani-ee1088.netlify.app/",
+    demo: "no-demo",
     tags: "Full-stack",
     repo: "no-repo",
     technologies: [

@@ -1,4 +1,3 @@
-import React from "react";
 import { NavigationBarContainer } from "./styles";
 import { ActionIcon } from "@mantine/core";
 import {

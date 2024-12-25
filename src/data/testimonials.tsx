@@ -29,8 +29,8 @@ export const testimonials = [
     designation: "Former Employer",
     avatar: appspotr,
     description:
-      '"Vidarshan has been a valuable member of the team, demonstrating exceptional proficiency in various technologies, including React JS, React Native, Redux, and Styled Components. His expertise has been instrumental in the development and enhancement of our low-code app building platform. Throughout his employment, Vidarshan has consistently showcased a strong understanding of React IS, and related tools, effectively leveraging these technologies to drive innovation and efficiency in our projects."',
-    link: "https://www.betalaunch.io",
+      '"Vidarshan has been a valuable member of the team, demonstrating exceptional proficiency in various technologies, including React JS, React Native, Redux, and Styled Components. His expertise has been instrumental in the development and enhancement of our low-code app building platform. Throughout his employment, Vidarshan has consistently showcased a strong understanding of React JS, and related tools, effectively leveraging these technologies to drive innovation and efficiency in our projects."',
+    link: "https://appspotr.com",
     type: "website",
   },
 ];

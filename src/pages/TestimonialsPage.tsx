@@ -1,10 +1,9 @@
 import {
+  Anchor,
   Avatar,
   Card,
-  Divider,
   Flex,
   Grid,
-  Image,
   Text,
   Title,
 } from "@mantine/core";
@@ -15,19 +14,29 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 const TestimonialsPage = () => {
   return (
     <TestimonialsPageContainer id="testimonials">
-      <Card p={12} shadow="xl" radius="lg">
-        <Title order={1}>Testimonials</Title>
+      <Card p={12} shadow="xs" radius="lg" withBorder>
+        <Title mb={10} order={1}>
+          Testimonials
+        </Title>
         <Grid>
           {testimonials.map((item) => {
             return (
               <Grid.Col span={6}>
-                <Card h='100%' withBorder>
+                <Card h="100%" withBorder>
                   <Flex direction="row" align="center">
-                    <Avatar mr={8} radius="xl" h={40} w={40} src={item.avatar} />
+                    <Avatar
+                      mr={8}
+                      radius="xl"
+                      h={40}
+                      w={40}
+                      src={item.avatar}
+                    />
                     <Flex direction="column">
-                      <Text fw={600} size="md">
-                        {item.name} <RiArrowRightUpLine />
-                      </Text>
+                      <Anchor href={item.link} target="_blank">
+                        <Text fw={600} size="md">
+                          {item.name} <RiArrowRightUpLine />
+                        </Text>
+                      </Anchor>
 
                       <Text fw={600} tt="uppercase" c="dimmed" size="sm">
                         {item.designation}
@@ -35,7 +44,7 @@ const TestimonialsPage = () => {
                     </Flex>
                   </Flex>
 
-                  <Text fs='italic' mt={10} size="sm">
+                  <Text fs="italic" mt={10} size="sm">
                     {item.description}
                   </Text>
                 </Card>

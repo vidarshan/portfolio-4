@@ -8,6 +8,48 @@ import {
 
 export const work = [
   {
+    title: "Student Assistant",
+    icon: <RiNumber5 />,
+    contribution: "Assistant",
+    company: "Douglas College",
+    date: "2024-12 - Present",
+    link: "https://www.douglascollege.ca/",
+    details:
+      "Helping students with learning software, networking, operating systems, and virtual machines in their courses by providing in-person (and/or online) peer tutoring.",
+    competencies: [
+      {
+        id: 1,
+        name: "Visual Studio (C#)",
+        color: "blue",
+      },
+      {
+        id: 2,
+        name: "JavaScript",
+        color: "yellow",
+      },
+      {
+        id: 3,
+        name: "Java",
+        color: "orange",
+      },
+      {
+        id: 4,
+        name: "Networking",
+        color: "gray",
+      },
+      {
+        id: 4,
+        name: "Virtualization",
+        color: "red",
+      },
+      {
+        id: 4,
+        name: "Wireshark",
+        color: "green",
+      },
+    ],
+  },
+  {
     title: "Software Engineer",
     icon: <RiNumber5 />,
     contribution: "Frontend Developer",
@@ -15,7 +57,7 @@ export const work = [
     date: "2022-05 - 2024-05",
     link: "https://www.appspotr.com/",
     details:
-      "Developed mobile apps with JavaScript/TypeScript using a content management system, building and maintaining custom UI libraries and React.js projects, implementing utility features like drag-and-drop, optimizing code with tools such as Redux Toolkit and Styled Components, and enhancing platform-specific features for iOS and Android.",
+      "Developed mobile apps with JavaScript/TypeScript using a content management system, built and maintained custom UI libraries and React.js projects, implemented utility features like drag-and-drop, optimized code with tools such as Redux Toolkit and Styled Components, and enhanced platform-specific features for iOS and Android.",
     competencies: [
       {
         id: 1,

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { ProjectPageContainer } from "./styles";
 import {
   ActionIcon,
+  Anchor,
   Badge,
   Box,
   Card,
@@ -20,6 +21,8 @@ import {
   RiArchiveDrawerFill,
   RiGithubFill,
   RiGlobalLine,
+  RiLock2Fill,
+  RiProhibited2Line,
   RiProjectorFill,
 } from "react-icons/ri";
 
@@ -28,9 +31,11 @@ const ProjectPage = () => {
 
   return (
     <ProjectPageContainer id="projects">
-      <Card p={12} shadow="xl" radius="lg">
+      <Card p={12} shadow="xs" radius="lg" withBorder>
         <Flex align="center" justify="space-between">
-          <Title order={1}>Projects</Title>
+          <Title mb={10} order={1}>
+            Projects
+          </Title>
           <SegmentedControl
             color="indigo"
             size="xs"
@@ -67,7 +72,7 @@ const ProjectPage = () => {
               {projects.map((project) => {
                 return (
                   <Grid.Col span={4}>
-                    <Card h="100%">
+                    <Card shadow="xs" h="100%" withBorder>
                       <Flex justify="space-between" align="center">
                         <Box>
                           <Text size="md" fw={600}>
@@ -78,16 +83,47 @@ const ProjectPage = () => {
                           </Text>
                         </Box>
                         <Box>
-                          <ActionIcon color="gray" size="sm" radius="xl" mr={4}>
-                            <RiGithubFill />
-                          </ActionIcon>
-                          <ActionIcon color="indigo" size="sm" radius="xl">
-                            <RiGlobalLine />
-                          </ActionIcon>
+                          {" "}
+                          {project.repo === "no-repo" ? (
+                            <ActionIcon
+                              mr={4}
+                              color="yellow"
+                              size="md"
+                              radius="xl"
+                            >
+                              <RiLock2Fill />
+                            </ActionIcon>
+                          ) : (
+                            <Anchor
+                              target="_blank"
+                              underline="never"
+                              href={project.repo}
+                            >
+                              <ActionIcon
+                                color="dark"
+                                size="md"
+                                radius="xl"
+                                mr={4}
+                              >
+                                <RiGithubFill />
+                              </ActionIcon>{" "}
+                            </Anchor>
+                          )}
+                          <Anchor
+                            target="_blank"
+                            underline="never"
+                            href={project.demo}
+                          >
+                            <ActionIcon color="indigo" size="md" radius="xl">
+                              <RiGlobalLine />
+                            </ActionIcon>
+                          </Anchor>
                         </Box>
                       </Flex>
                       <Image src={project.image} />
-                      <Text size="sm">{project.description}</Text>
+                      <Text fw={500} size="xs">
+                        {project.description}
+                      </Text>
                       <Divider
                         my="xs"
                         label="Technologies"
@@ -113,7 +149,7 @@ const ProjectPage = () => {
               {projectsArchive.map((project) => {
                 return (
                   <Grid.Col span={4}>
-                    <Card h="100%">
+                    <Card h="100%" withBorder>
                       <Flex justify="space-between" align="center">
                         <Box>
                           <Text size="md" fw={600}>
@@ -124,12 +160,47 @@ const ProjectPage = () => {
                           </Text>
                         </Box>
                         <Box>
-                          <ActionIcon color="gray" size="sm" radius="xl" mr={4}>
-                            <RiGithubFill />
-                          </ActionIcon>
-                          <ActionIcon color="indigo" size="sm" radius="xl">
-                            <RiGlobalLine />
-                          </ActionIcon>
+                          {" "}
+                          {project.repo === "no-repo" ? (
+                            <ActionIcon
+                              mr={4}
+                              color="yellow"
+                              size="md"
+                              radius="xl"
+                            >
+                              <RiLock2Fill />
+                            </ActionIcon>
+                          ) : (
+                            <Anchor
+                              target="_blank"
+                              underline="never"
+                              href={project.repo}
+                            >
+                              <ActionIcon
+                                color="dark"
+                                size="md"
+                                radius="xl"
+                                mr={4}
+                              >
+                                <RiGithubFill />
+                              </ActionIcon>{" "}
+                            </Anchor>
+                          )}
+                          {project.demo === "no-demo" ? (
+                            <ActionIcon color="grape" size="md" radius="xl">
+                              <RiProhibited2Line />
+                            </ActionIcon>
+                          ) : (
+                            <Anchor
+                              target="_blank"
+                              underline="never"
+                              href={project.demo}
+                            >
+                              <ActionIcon color="indigo" size="md" radius="xl">
+                                <RiGlobalLine />
+                              </ActionIcon>
+                            </Anchor>
+                          )}
                         </Box>
                       </Flex>
                       <Image src={project.image} />

@@ -5,31 +5,30 @@ import {
   Button,
   Card,
   Flex,
-  MantineThemeContext,
-  Paper,
   Text,
   Title,
   useMantineColorScheme,
 } from "@mantine/core";
-import React from "react";
 import {
   RiBriefcase4Fill,
   RiGithubFill,
   RiHandHeartFill,
   RiHome5Fill,
   RiLinkedinBoxFill,
-  RiMessage3Fill,
-  RiMoonFoggyFill,
+  RiMailOpenFill,
+  RiMoonFill,
   RiProjectorFill,
-  RiStackOverflowFill,
-  RiSunFoggyFill,
+  RiSunFill,
 } from "react-icons/ri";
 import { AboutCardContainer } from "./styles";
 
 const AboutCard = () => {
   const { colorScheme, setColorScheme } = useMantineColorScheme();
-  console.log(colorScheme);
 
+  const email = import.meta.env.VITE_EMAIL_ADDRESS; // For Vite
+  const linkedinURL = import.meta.env.VITE_LINKEDIN_ADDRESS;
+  const githubURL = import.meta.env.VITE_GITHUB_ADDRESS;
+  console.log(linkedinURL);
   const handleToggleTheme = () => {
     if (colorScheme === "dark") {
       setColorScheme("light");
@@ -40,33 +39,35 @@ const AboutCard = () => {
 
   return (
     <AboutCardContainer>
-      <Card p={12} shadow="xl" radius="lg" withBorder>
+      <Card w={400} p={12} shadow="xs" radius="lg" withBorder>
         <Flex justify="space-between" align="center">
-          <Box mb={10}>
+          <Box mb={0} pb={0}>
             <Title order={1} w={300}>
               Vidarshan
             </Title>
-            <Title order={3} c="indigo">
+            <Title order={4} c="indigo">
               Software Engineer
             </Title>
           </Box>
           <ActionIcon
             color={colorScheme === "dark" ? "indigo" : "orange"}
-            variant="light"
+            variant="filled"
             radius="xl"
             size="lg"
             onClick={() => handleToggleTheme()}
           >
-            {colorScheme === "dark" ? <RiMoonFoggyFill /> : <RiSunFoggyFill />}
+            {colorScheme === "dark" ? <RiMoonFill /> : <RiSunFill />}
           </ActionIcon>
         </Flex>
-
-        <Flex mt={20} mb={20} direction="column" gap={14}>
+        <Text size="sm" fw={600}>
+          Crafting code into reality.
+        </Text>
+        <Flex mt={30} mb={20} direction="column" gap={14}>
           <Anchor href="#about">
             <Button
               color="indigo"
               justify="start"
-              variant="light"
+              variant="filled"
               radius="xl"
               fullWidth
               leftSection={<RiHome5Fill />}
@@ -78,7 +79,7 @@ const AboutCard = () => {
             <Button
               color="indigo"
               justify="start"
-              variant="light"
+              variant="filled"
               radius="xl"
               fullWidth
               leftSection={<RiBriefcase4Fill />}
@@ -90,7 +91,7 @@ const AboutCard = () => {
             <Button
               color="indigo"
               justify="start"
-              variant="light"
+              variant="filled"
               radius="xl"
               fullWidth
               leftSection={<RiProjectorFill />}
@@ -102,7 +103,7 @@ const AboutCard = () => {
             <Button
               color="indigo"
               justify="start"
-              variant="light"
+              variant="filled"
               radius="xl"
               fullWidth
               leftSection={<RiHandHeartFill />}
@@ -112,18 +113,36 @@ const AboutCard = () => {
           </Anchor>
         </Flex>
         <Flex mt={20} justify="center" gap={6}>
-          <ActionIcon color="blue" variant="filled" radius="xl" size="lg">
-            <RiLinkedinBoxFill />
-          </ActionIcon>
-          <ActionIcon color="black" variant="filled" radius="xl" size="lg">
-            <RiGithubFill />
-          </ActionIcon>
-          <ActionIcon color="orange" variant="filled" radius="xl" size="lg">
-            <RiStackOverflowFill />
-          </ActionIcon>
-          <ActionIcon color="green" variant="filled" radius="xl" size="lg">
-            <RiMessage3Fill />
-          </ActionIcon>
+          <Anchor href={linkedinURL} target="_blank">
+            <Button
+              color="blue"
+              size="xs"
+              radius="xl"
+              leftSection={<RiLinkedinBoxFill />}
+            >
+              Linkedin
+            </Button>
+          </Anchor>
+          <Anchor href={githubURL} target="_blank">
+            <Button
+              color="dark"
+              size="xs"
+              radius="xl"
+              leftSection={<RiGithubFill />}
+            >
+              Github
+            </Button>
+          </Anchor>
+          <Anchor href={"mailto:" + email} target="_blank">
+            <Button
+              color="red"
+              size="xs"
+              radius="xl"
+              leftSection={<RiMailOpenFill />}
+            >
+              Mail
+            </Button>
+          </Anchor>
         </Flex>
       </Card>
     </AboutCardContainer>

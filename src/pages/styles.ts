@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const AboutPageContainer = styled.section`
-  margin-top: 200px;
+  padding-top: 10rem;
 `;
 export const WorkPageContainer = styled.section`
-  margin-top: 200px;
+    padding-top: 10rem;
 `;
 export const ProjectPageContainer = styled.section`
-  margin-top: 200px;
+   padding-top: 10rem;
 `;
 export const TestimonialsPageContainer = styled.section`
-  margin-top: 200px;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 `;
