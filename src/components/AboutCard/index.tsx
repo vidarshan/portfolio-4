@@ -1,5 +1,6 @@
 import {
   ActionIcon,
+  Anchor,
   Box,
   Button,
   Card,
@@ -40,7 +41,7 @@ const AboutCard = () => {
   return (
     <AboutCardContainer>
       <Card p={12} shadow="xl" radius="lg" withBorder>
-        <Flex justify='space-between' align="center">
+        <Flex justify="space-between" align="center">
           <Box mb={10}>
             <Title order={1} w={300}>
               Vidarshan
@@ -54,7 +55,6 @@ const AboutCard = () => {
             variant="light"
             radius="xl"
             size="lg"
-            
             onClick={() => handleToggleTheme()}
           >
             {colorScheme === "dark" ? <RiMoonFoggyFill /> : <RiSunFoggyFill />}
@@ -62,58 +62,66 @@ const AboutCard = () => {
         </Flex>
 
         <Flex mt={20} mb={20} direction="column" gap={14}>
-          <Button
-            color="indigo"
-            justify="start"
-            variant="light"
-            radius="xl"
-            fullWidth
-            leftSection={<RiHome5Fill />}
-          >
-            About
-          </Button>
-          <Button
-            color="indigo"
-            justify="start"
-            variant="light"
-            radius="xl"
-            fullWidth
-            leftSection={<RiBriefcase4Fill />}
-          >
-            Work
-          </Button>
-          <Button
-            color="indigo"
-            justify="start"
-            variant="light"
-            radius="xl"
-            fullWidth
-            leftSection={<RiProjectorFill />}
-          >
-            Projects
-          </Button>
-          <Button
-            color="indigo"
-            justify="start"
-            variant="light"
-            radius="xl"
-            fullWidth
-            leftSection={<RiHandHeartFill />}
-          >
-            Testimonials
-          </Button>
+          <Anchor href="#about">
+            <Button
+              color="indigo"
+              justify="start"
+              variant="light"
+              radius="xl"
+              fullWidth
+              leftSection={<RiHome5Fill />}
+            >
+              About
+            </Button>
+          </Anchor>
+          <Anchor href="#work">
+            <Button
+              color="indigo"
+              justify="start"
+              variant="light"
+              radius="xl"
+              fullWidth
+              leftSection={<RiBriefcase4Fill />}
+            >
+              Work
+            </Button>
+          </Anchor>
+          <Anchor href="#projects">
+            <Button
+              color="indigo"
+              justify="start"
+              variant="light"
+              radius="xl"
+              fullWidth
+              leftSection={<RiProjectorFill />}
+            >
+              Projects
+            </Button>
+          </Anchor>
+          <Anchor href="#testimonials">
+            <Button
+              color="indigo"
+              justify="start"
+              variant="light"
+              radius="xl"
+              fullWidth
+              leftSection={<RiHandHeartFill />}
+            >
+              Testimonials
+            </Button>
+          </Anchor>
         </Flex>
         <Flex mt={20} justify="center" gap={6}>
-          <ActionIcon color="blue" variant="light" radius="xl" size="lg">
+          <ActionIcon color="blue" variant="filled" radius="xl" size="lg">
             <RiLinkedinBoxFill />
           </ActionIcon>
-          <ActionIcon color="gray" variant="light" radius="xl" size="lg">
+          <ActionIcon color="black" variant="filled" radius="xl" size="lg">
             <RiGithubFill />
           </ActionIcon>
-          <ActionIcon color="orange" variant="light" radius="xl" size="lg">
+          <ActionIcon color="orange" variant="filled" radius="xl" size="lg">
             <RiStackOverflowFill />
           </ActionIcon>
-          <ActionIcon color="green" variant="light" radius="xl" size="lg">
+          <ActionIcon color="green" variant="filled" radius="xl" size="lg">
             <RiMessage3Fill />
           </ActionIcon>
         </Flex>

@@ -104,7 +104,7 @@ export const projects = [
     id: 3,
     name: "Formy",
     description:
-      "A powerful questionnaire-generating platform that empowers users to create customized forms effortlessly. With an intuitive interface, users can design questionnaires featuring a variety of question types, including text, numbers, multiple-choice options, single selections, and rating scales. Once the questionnaires are shared with participants, users can easily collect responses and view the results in a well-organized layout. Formy streamlines the process of data collection and analysis, making it simple for users to gain insights from participant feedback and responses. Create, share, and analyze with Formy—your go-to solution for efficient questionnaire management!",
+      "Formy is a versatile platform for creating customized questionnaires with ease. Its intuitive interface supports text, number, multiple-choice, single-selection, and rating-scale questions. Share forms effortlessly, collect responses, and analyze results in a clear layout. Simplify data collection and gain insights with Formy—your ultimate tool for efficient questionnaire management!",
     image:
       "https://res.cloudinary.com/dury4s2jk/image/upload/v1691914357/Default_hykn5x.png",
     repo: "https://github.com/vidarshan/formy-questionnaire.git",
@@ -147,7 +147,7 @@ export const projects = [
     id: 4,
     name: "Meal Central",
     description:
-      "A cross-platform mobile application designed specifically for small to mid-sized local restaurants, streamlining their business operations with ease. This application offers essential functionalities, including the management of meal categories and the ability to customize dishes to meet customer preferences. Users can conveniently add meals to their cart, place orders, and track deliveries in real-time. With this mobile app, restaurants can enhance their customer experience, improve operational efficiency, and foster greater engagement with their patrons. Elevate your restaurant's service with this comprehensive mobile solution!",
+      "A cross-platform mobile app for small to mid-sized restaurants, simplifying operations and enhancing customer experience. Features include meal category management, dish customization, real-time order tracking, and seamless cart and checkout functionality. Boost efficiency, engage patrons, and elevate your restaurant’s service with this all-in-one solution!",
     image:
       "https://res.cloudinary.com/dury4s2jk/image/upload/v1685806423/Tech_Stop_Mobile_1_tjbuo5.png",
     demo: "https://meal-cart.onrender.com",
@@ -175,7 +175,7 @@ export const projects = [
     id: 5,
     name: "Techstop Mobile",
     description:
-      "A mobile app designed for an online gadget shop, offering essential functionalities for a seamless e-commerce experience. With a user-friendly interface and visually appealing design, the app makes it easy for customers to browse and purchase gadgets effortlessly. Key features include intuitive navigation, secure payment options, and streamlined order tracking, ensuring that users can find exactly what they need quickly and conveniently. This app is tailored to enhance the shopping experience, allowing tech enthusiasts to explore the latest gadgets at their fingertips. Discover convenience and satisfaction with our dedicated e-commerce mobile solution!",
+      "A mobile app for an online gadget shop, delivering a seamless e-commerce experience. With an intuitive interface, secure payment options, and streamlined order tracking, customers can effortlessly browse and purchase gadgets. Explore the latest tech with ease and convenience through our dedicated e-commerce solution!",
     image:
       "https://res.cloudinary.com/dury4s2jk/image/upload/v1685806423/Tech_Stop_Mobile_mxvgud.png",
     repo: "https://github.com/vidarshan/techstop-mobile",
@@ -208,7 +208,7 @@ export const projects = [
     id: 6,
     name: "Open Weather",
     description:
-      "Discover the weather around you with our intuitive application powered by the Open Weather API. Utilizing the Geolocation API, the app allows users to check the weather for their current location or any desired area effortlessly. Experience an excellent presentation of weather information, neatly categorized into current conditions, hourly forecasts, and daily outlooks. With a user-friendly interface and accurate data, this app ensures you’re always informed about the weather, helping you plan your day with confidence. Stay prepared and enjoy seamless weather tracking at your fingertips!",
+      "Stay informed with our weather app powered by the Open Weather API and Geolocation API. Easily check current conditions, hourly forecasts, and daily outlooks for your location or anywhere you choose. With accurate data and a user-friendly interface, plan your day confidently and enjoy seamless weather updates anytime!",
     image:
       "https://res.cloudinary.com/dury4s2jk/image/upload/v1685806422/Open_Weather_sbftmm.png",
     repo: "https://github.com/vidarshan/open-weather-app",
@@ -246,7 +246,7 @@ export const projects = [
     id: 7,
     name: "Github Search",
     description:
-      "A straightforward application built using the GitHub REST API, designed to enhance the user experience for GitHub enthusiasts. This app allows users to easily search for any GitHub user and explore their repositories and starred repos with just a few clicks. Additionally, users can view detailed profile information of the selected GitHub user effortlessly. With its intuitive interface and seamless navigation, this application empowers users to connect with the GitHub community and discover projects that inspire them. Simplify your GitHub experience with our user-friendly search tool!",
+      "A simple app built with the GitHub REST API, designed for GitHub enthusiasts. Users can easily search for any GitHub user, explore their repositories and starred repos, and view detailed profile information. With an intuitive interface and seamless navigation, connect with the GitHub community and discover inspiring projects effortlessly.",
     image:
       "https://res.cloudinary.com/dury4s2jk/image/upload/v1685806627/Github_Search_x0sq2n.png",
     repo: "https://github.com/vidarshan/github-search",
@@ -274,7 +274,7 @@ export const projects = [
     id: 8,
     name: "Great Success",
     description:
-      "A simple yet inspiring project designed to motivate and uplift you throughout the day. This application offers a collection of great quotes that can energize your mindset and encourage positive thinking. With a unique shuffle feature, the more you interact with the app, the more fresh quotes you receive, keeping your inspiration flowing. The minimalist design enhances your experience by providing a calming and focused environment, allowing you to reflect on each quote. Embrace daily inspiration and elevate your mood with this beautifully crafted quotes application!",
+      "An inspiring app designed to uplift your day with a collection of motivational quotes. Featuring a shuffle option, the more you interact, the more fresh quotes you receive. Its minimalist design creates a calming, focused environment for reflection. Embrace daily inspiration and elevate your mood effortlessly!",
     image:
       "https://res.cloudinary.com/dury4s2jk/image/upload/v1685808236/Great_Success_booker.png",
     repo: "https://github.com/vidarshan/great-success",
@@ -293,17 +293,16 @@ export const projects = [
       },
     ],
   },
-
   {
     id: 9,
-    name: "Portfolio V2",
+    name: "Portfolio V3",
     description:
-      "Version 2 of my portfolio website, crafted with Next.js. This iteration draws significant inspiration from the design principles and user experience of the previous version, showcasing my growth and evolution as a developer. With a refined layout and enhanced functionality, this portfolio not only highlights my skills and projects but also reflects my commitment to creating visually appealing and user-friendly experiences. Explore the new design and discover the passion and creativity that drive my work!",
+      "The third version of my portfolio website. Served the primary purpose of showing my information. Integrated with stackoverflow API to pull stackoverflow data with sending emails directly to my inbox through email.",
     image:
-      "https://res.cloudinary.com/dury4s2jk/image/upload/v1685806422/Portfolio_V2_aqtxdi.png",
-    repo: "https://github.com/vidarshan/portfolio-2",
-    demo: "https://portfolio-v2-vidarshanadithya.vercel.app/",
-    tags: "Full-stack",
+      "https://res.cloudinary.com/dury4s2jk/image/upload/v1685977248/portfolio_ltq0l4.webp",
+    repo: "https://github.com/vidarshan/portfolio-3",
+    demo: "https://brave-ritchie-79c17c.netlify.app/",
+    tags: "Frontend",
     technologies: [
       {
         id: 1,
@@ -575,7 +574,7 @@ export const projectsArchive = [
   },
   {
     id: 3,
-    name: "Portfolio v1",
+    name: "Portfolio V1",
     description:
       "The very first version of my portfolio website made with no UI frameworks. Served the primary purpose of showing my information. Almost every element was implemented with SCSS. Deprecated in favour of the portfolio website you are currently viewing, as this has much better performance and responsiveness.",
     image:
@@ -593,6 +592,34 @@ export const projectsArchive = [
         id: 2,
         name: "SCSS",
         color: "pink",
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Portfolio V2",
+    description:
+      "Version 2 of my portfolio website, built with Next.js, showcases my growth as a developer. Inspired by the previous version, this iteration features a refined layout, enhanced functionality, and a focus on visually appealing, user-friendly design. Explore my skills, projects, and the creativity that drives my work!",
+    image:
+      "https://res.cloudinary.com/dury4s2jk/image/upload/v1685806422/Portfolio_V2_aqtxdi.png",
+    repo: "https://github.com/vidarshan/portfolio-2",
+    demo: "https://portfolio-v2-vidarshanadithya.vercel.app/",
+    tags: "Full-stack",
+    technologies: [
+      {
+        id: 1,
+        name: "Next JS",
+        color: "gray",
+      },
+      {
+        id: 2,
+        name: "Typescript",
+        color: "blue",
+      },
+      {
+        id: 3,
+        name: "Mantine",
+        color: "indigo",
       },
     ],
   },

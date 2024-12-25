@@ -1,7 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import {
+  ActionIcon,
+  Affix,
   Box,
+  Button,
   ColorSchemeScript,
   Container,
   Flex,
@@ -9,6 +12,7 @@ import {
   MantineProvider,
   Text,
   Title,
+  Transition,
   useMantineColorScheme,
 } from "@mantine/core";
 import gsap from "gsap";
@@ -19,12 +23,17 @@ import AboutCard from "./components/AboutCard";
 import AboutPage from "./pages/AboutPage";
 import WorkPage from "./pages/WorkPage";
 import ProjectPage from "./pages/ProjectPage";
+import TestimonialsPage from "./pages/TestimonialsPage";
+import Footer from "./components/Footer";
+import { useWindowScroll } from "@mantine/hooks";
+import { RiArrowUpLine } from "react-icons/ri";
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 const App = () => {
   const elementRef = useRef<HTMLDivElement>(null);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [scroll, scrollTo] = useWindowScroll();
 
   const handleScroll = () => {
     setScrollPosition(window.scrollY);
@@ -153,20 +162,37 @@ const App = () => {
         },
       }}
     >
+      <Affix position={{ bottom: 20, right: 20 }}>
+        <Transition transition="slide-up" mounted={scroll.y > 0}>
+          {(transitionStyles) => (
+            <ActionIcon
+              radius="xl"
+              size="lg"
+              color="lime"
+              style={transitionStyles}
+              onClick={() => scrollTo({ y: 0 })}
+            >
+              <RiArrowUpLine />
+            </ActionIcon>
+          )}
+        </Transition>
+      </Affix>
       <Container size="xl" onWheel={handleWheel} ref={elementRef}>
-        <Grid>
-          <Grid.Col span={3}>
+        <Grid p={0}>
+          <Grid.Col span={4}>
             <AboutCard />
           </Grid.Col>
-          <Grid.Col span={9}>
+          <Grid.Col span={8}>
             <Box>
               <AboutPage />
               <WorkPage />
               <ProjectPage />
+              <TestimonialsPage />
             </Box>
           </Grid.Col>
         </Grid>
       </Container>
+      <Footer />
     </MantineProvider>
   );
 };

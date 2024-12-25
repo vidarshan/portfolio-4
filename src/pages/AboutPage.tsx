@@ -13,7 +13,7 @@ import {
 
 const AboutPage = () => {
   return (
-    <AboutPageContainer>
+    <AboutPageContainer id="about">
       <Card p={12} shadow="xl" radius="lg" >
         <Title order={1}>About Me</Title>
         <Text>
