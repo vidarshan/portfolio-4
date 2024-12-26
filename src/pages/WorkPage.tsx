@@ -21,7 +21,12 @@ const WorkPage = () => {
             Work
           </Title>
           <Anchor href="/files/resume.pdf" download="vidarshan_resume.pdf">
-            <Button radius="xl" size="xs" leftSection={<RiDownloadLine />}>
+            <Button
+              color="lime"
+              radius="xl"
+              size="xs"
+              leftSection={<RiDownloadLine />}
+            >
               Download Resume
             </Button>
           </Anchor>
@@ -50,7 +55,9 @@ const WorkPage = () => {
                 )}
 
                 {exp.date.includes("Present") ? (
-                  <Badge color="green">{exp.date}</Badge>
+                  <Text c="green" tt="uppercase" fw={800} size="xs">
+                    {exp.date}
+                  </Text>
                 ) : (
                   <Text fw={600} size="xs">
                     {exp.date}

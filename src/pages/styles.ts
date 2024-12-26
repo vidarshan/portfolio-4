@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const HomePageContainer = styled.section`
-  height: calc(100vh - 3.6rem);
+  height: 100vh;
 `;
 export const AboutPageContainer = styled.section`
   padding-top: 10rem;

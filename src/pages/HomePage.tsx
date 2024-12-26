@@ -7,18 +7,15 @@ import {
   RiMailOpenFill,
 } from "react-icons/ri";
 
-
 const HomePage = () => {
   const email = import.meta.env.VITE_EMAIL_ADDRESS;
   const linkedinURL = import.meta.env.VITE_LINKEDIN_ADDRESS;
   const githubURL = import.meta.env.VITE_GITHUB_ADDRESS;
 
-
-
   return (
     <HomePageContainer className="home" id="home">
-      <Flex h="calc(100vh - 3.6rem)" direction="column" justify="center">
-        <Title>Vidarshan</Title>
+      <Flex h="calc(100vh - 6rem)" direction="column" justify="center">
+        <Title mt="6rem">Vidarshan</Title>
         <Title order={2} c="lime">
           Software Engineer
         </Title>
