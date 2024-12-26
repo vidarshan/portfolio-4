@@ -18,7 +18,7 @@ const HomePage = () => {
   return (
     <HomePageContainer className="home" id="home">
       <Flex h="calc(100vh)" direction="column" justify="space-between">
-        <Box>d</Box>
+        <Box></Box>
         <Box>
           <Title>Vidarshan</Title>
           <Title order={2} c="lime">
