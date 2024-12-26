@@ -15,13 +15,13 @@ const TestimonialsPage = () => {
   return (
     <TestimonialsPageContainer id="testimonials">
       <Card p={12} shadow="xs" radius="lg" withBorder>
-        <Title mb={10} order={1}>
+        <Title c='lime' mb={10} order={1}>
           Testimonials
         </Title>
         <Grid>
           {testimonials.map((item) => {
             return (
-              <Grid.Col span={6}>
+              <Grid.Col key={item.id} span={{xs:12, sm: 6, md: 4, lg:6, xl:6}}>
                 <Card h="100%" withBorder>
                   <Flex direction="row" align="center">
                     <Avatar

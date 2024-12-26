@@ -38,12 +38,12 @@ export const work = [
         color: "gray",
       },
       {
-        id: 4,
+        id: 5,
         name: "Virtualization",
         color: "red",
       },
       {
-        id: 4,
+        id: 6,
         name: "Wireshark",
         color: "green",
       },
@@ -80,12 +80,12 @@ export const work = [
         color: "green",
       },
       {
-        id: 4,
+        id: 5,
         name: "iOS",
         color: "red",
       },
       {
-        id: 4,
+        id: 6,
         name: "Android",
         color: "green",
       },

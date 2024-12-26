@@ -10,24 +10,32 @@ import {
   Title,
 } from "@mantine/core";
 import { work } from "../data/work";
-import {
-  RiArrowRightUpLine,
-  RiDownloadLine,
-} from "react-icons/ri";
+import { RiArrowRightUpLine, RiDownloadLine } from "react-icons/ri";
 
 const WorkPage = () => {
   return (
     <WorkPageContainer id="work">
       <Card p={12} shadow="xs" radius="lg" withBorder>
         <Flex justify="space-between" align="center">
-          <Title order={1}>Work</Title>
-          <Button radius='xl' size="xs" leftSection={<RiDownloadLine />}>
-            Download Resume
-          </Button>
+          <Title c="lime" order={1}>
+            Work
+          </Title>
+          <Anchor href="/files/resume.pdf" download="vidarshan_resume.pdf">
+            <Button radius="xl" size="xs" leftSection={<RiDownloadLine />}>
+              Download Resume
+            </Button>
+          </Anchor>
         </Flex>
         {work.map((exp) => {
           return (
-            <Card shadow='xs' radius='lg' mt={10} key={exp.date} mb={4} withBorder>
+            <Card
+              shadow="xs"
+              radius="lg"
+              mt={10}
+              key={exp.date}
+              mb={4}
+              withBorder
+            >
               <Flex align="center" justify="space-between">
                 {exp.link === "no-link" ? (
                   <Text size="md" fw={600}>

@@ -33,7 +33,7 @@ const ProjectPage = () => {
     <ProjectPageContainer id="projects">
       <Card p={12} shadow="xs" radius="lg" withBorder>
         <Flex align="center" justify="space-between">
-          <Title mb={10} order={1}>
+          <Title c='lime' mb={10} order={1}>
             Projects
           </Title>
           <SegmentedControl
@@ -71,7 +71,7 @@ const ProjectPage = () => {
               {" "}
               {projects.map((project) => {
                 return (
-                  <Grid.Col span={4}>
+                  <Grid.Col key={project.id} span={{xs:12, sm: 6, md: 4, lg:4, xl:4}}>
                     <Card shadow="xs" h="100%" withBorder>
                       <Flex justify="space-between" align="center">
                         <Box>
@@ -148,7 +148,7 @@ const ProjectPage = () => {
               {" "}
               {projectsArchive.map((project) => {
                 return (
-                  <Grid.Col span={4}>
+                  <Grid.Col span={{xs:12, sm: 6, md: 4, lg:4, xl:4}}>
                     <Card h="100%" withBorder>
                       <Flex justify="space-between" align="center">
                         <Box>

@@ -4,7 +4,7 @@ import appspotr from "../assets/testimonial3.webp";
 
 export const testimonials = [
   {
-    id: 1,
+    id: '1',
     name: " Hasith Jayasekara",
     designation: "Senior Software Engineer",
     avatar: hasith,
@@ -14,7 +14,7 @@ export const testimonials = [
     type: "linkedin",
   },
   {
-    id: 2,
+    id: '2',
     name: "Beta Launch",
     designation: "Former Employer",
     avatar: betalaunch,
@@ -24,7 +24,7 @@ export const testimonials = [
     type: "website",
   },
   {
-    id: 3,
+    id: '3',
     name: "Appspotr AB",
     designation: "Former Employer",
     avatar: appspotr,

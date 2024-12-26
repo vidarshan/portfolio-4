@@ -1,11 +1,12 @@
-import { Box } from "@mantine/core";
+import { Paper } from "@mantine/core";
 import styled from "styled-components";
 
-export const NavigationBarContainer = styled(Box)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  padding: 0.4rem;
-  border-radius: 0.5rem;
+export const NavigationBarContainer = styled(Paper)`
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 3.6rem;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 `;

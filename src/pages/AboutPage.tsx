@@ -16,7 +16,7 @@ const AboutPage = () => {
   return (
     <AboutPageContainer id="about">
       <Card p={12} shadow="xs" radius="lg" withBorder>
-        <Title mb={10} order={1}>
+        <Title c='lime' mb={10} order={1}>
           About Me
         </Title>
         <Text size="sm" fw={500} mb={4}>
