@@ -48,7 +48,7 @@ const WorkPage = () => {
                   </Text>
                 ) : (
                   <Text size="md" fw={600}>
-                    <Anchor target="_blank" href={exp.link} fw={600}>
+                    <Anchor c="lime" target="_blank" href={exp.link} fw={600}>
                       {exp.title} @ {exp.company} <RiArrowRightUpLine />
                     </Anchor>
                   </Text>

@@ -23,7 +23,7 @@ const App = () => {
   return (
     <>
       <MantineProvider
-        defaultColorScheme="auto"
+        defaultColorScheme="dark"
         theme={{
           shadows: {
             xs: "0",

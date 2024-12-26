@@ -33,7 +33,7 @@ const TestimonialsPage = () => {
                     />
                     <Flex direction="column">
                       <Anchor href={item.link} target="_blank">
-                        <Text fw={600} size="md">
+                        <Text c="lime" fw={600} size="md">
                           {item.name} <RiArrowRightUpLine />
                         </Text>
                       </Anchor>

@@ -30,7 +30,7 @@ const AboutPage = () => {
         {education.map((edu) => {
           return (
             <Card radius="lg" key={edu.id} mb={8} withBorder>
-              <Text size="md" fw={600}>
+              <Text c="lime" size="md" fw={600}>
                 {edu.title} @ {edu.institute}, {edu.location}
               </Text>
               <Text tt='uppercase' fw={600} c="dimmed" size="xs">

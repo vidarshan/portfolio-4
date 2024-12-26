@@ -78,7 +78,7 @@ const ProjectPage = () => {
                     <Card shadow="xs" h="100%" withBorder>
                       <Flex justify="space-between" align="center">
                         <Box>
-                          <Text size="md" fw={600}>
+                          <Text c="lime" size="md" fw={600}>
                             {project.name}
                           </Text>
                           <Text c="dimmed" size="xs" tt="uppercase" fw={600}>
@@ -117,7 +117,7 @@ const ProjectPage = () => {
                             underline="never"
                             href={project.demo}
                           >
-                            <ActionIcon color="indigo" size="md" radius="xl">
+                            <ActionIcon color="lime" size="md" radius="xl">
                               <RiGlobalLine />
                             </ActionIcon>
                           </Anchor>
@@ -155,7 +155,7 @@ const ProjectPage = () => {
                     <Card h="100%" withBorder>
                       <Flex justify="space-between" align="center">
                         <Box>
-                          <Text size="md" fw={600}>
+                          <Text c="lime" size="md" fw={600}>
                             {project.name}
                           </Text>
                           <Text c="dimmed" size="xs" tt="uppercase" fw={600}>
