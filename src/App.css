@@ -7,3 +7,27 @@ html, body {
 h1{
   margin: 0;
 }
+
+
+.slide-to-unlock {
+  background: linear-gradient(
+    to right,
+    #315400,
+    #a9f440,
+    #284400
+  );
+  background-size: 300% 100%; 
+  -webkit-background-clip: text; 
+  -moz-background-clip: text; 
+  color: transparent;
+  animation: slide-text 4s linear infinite; 
+}
+
+@keyframes slide-text {
+  0% {
+    background-position: 0% 0; 
+  }
+  100% {
+    background-position: 100% 0; 
+  }
+}
