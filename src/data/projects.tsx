@@ -299,9 +299,9 @@ export const projects = [
     description:
       "The third version of my portfolio website. Served the primary purpose of showing my information. Integrated with stackoverflow API to pull stackoverflow data with sending emails directly to my inbox through email.",
     image:
-      "https://res.cloudinary.com/dury4s2jk/image/upload/v1685977248/portfolio_ltq0l4.webp",
+      "https://res.cloudinary.com/dury4s2jk/image/upload/v1735272472/portfolio-3_ocqzoi.png",
     repo: "https://github.com/vidarshan/portfolio-3",
-    demo: "https://brave-ritchie-79c17c.netlify.app/",
+    demo: "https://portfolio-3-287q.vercel.app/",
     tags: "Frontend",
     technologies: [
       {
