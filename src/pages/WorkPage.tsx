@@ -17,12 +17,12 @@ const WorkPage = () => {
     <WorkPageContainer id="work">
       <Card p={12} shadow="xs" radius="lg" withBorder>
         <Flex justify="space-between" align="center">
-          <Title c="lime" order={1}>
+          <Title c="blue" order={1}>
             Work
           </Title>
           <Anchor href="/files/resume.pdf" download="vidarshan_resume.pdf">
             <Button
-              color="lime"
+              color="blue"
               radius="xl"
               size="xs"
               leftSection={<RiDownloadLine />}
@@ -48,7 +48,7 @@ const WorkPage = () => {
                   </Text>
                 ) : (
                   <Text size="md" fw={600}>
-                    <Anchor c="lime" target="_blank" href={exp.link} fw={600}>
+                    <Anchor c="blue" target="_blank" href={exp.link} fw={600}>
                       {exp.title} @ {exp.company} <RiArrowRightUpLine />
                     </Anchor>
                   </Text>

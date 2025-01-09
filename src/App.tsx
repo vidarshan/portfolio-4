@@ -76,7 +76,7 @@ const App = () => {
               <ActionIcon
                 radius="xl"
                 size="lg"
-                color="lime"
+                color="blue"
                 style={transitionStyles}
                 onClick={() => scrollTo({ y: 0 })}
               >

@@ -33,11 +33,11 @@ const ProjectPage = () => {
     <ProjectPageContainer id="projects">
       <Card p={12} shadow="xs" radius="lg" withBorder>
         <Flex align="center" justify="space-between">
-          <Title c="lime" mb={10} order={1}>
+          <Title c="blue" mb={10} order={1}>
             Projects
           </Title>
           <SegmentedControl
-            color="lime"
+            color="blue"
             size="xs"
             radius="xl"
             value={value}
@@ -78,7 +78,7 @@ const ProjectPage = () => {
                     <Card shadow="xs" h="100%" withBorder>
                       <Flex justify="space-between" align="center">
                         <Box>
-                          <Text c="lime" size="md" fw={600}>
+                          <Text c="blue" size="md" fw={600}>
                             {project.name}
                           </Text>
                           <Text c="dimmed" size="xs" tt="uppercase" fw={600}>
@@ -117,7 +117,7 @@ const ProjectPage = () => {
                             underline="never"
                             href={project.demo}
                           >
-                            <ActionIcon color="lime" size="md" radius="xl">
+                            <ActionIcon color="blue" size="md" radius="xl">
                               <RiGlobalLine />
                             </ActionIcon>
                           </Anchor>
@@ -155,7 +155,7 @@ const ProjectPage = () => {
                     <Card h="100%" withBorder>
                       <Flex justify="space-between" align="center">
                         <Box>
-                          <Text c="lime" size="md" fw={600}>
+                          <Text c="blue" size="md" fw={600}>
                             {project.name}
                           </Text>
                           <Text c="dimmed" size="xs" tt="uppercase" fw={600}>

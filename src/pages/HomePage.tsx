@@ -21,7 +21,7 @@ const HomePage = () => {
         <Box></Box>
         <Box>
           <Title>Vidarshan</Title>
-          <Title order={2} c="lime">
+          <Title order={2} c="blue">
             Software Engineer
           </Title>
           <Title order={3} c="gray÷">

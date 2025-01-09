@@ -36,7 +36,7 @@ const NavigationBar = () => {
             <Tooltip label="Home" withArrow>
               <Anchor href="#home">
                 <ActionIcon
-                  color="lime"
+                  color="blue"
                   mr={12}
                   radius="xl"
                   variant="filled"
@@ -49,7 +49,7 @@ const NavigationBar = () => {
             <Tooltip label="About" withArrow>
               <Anchor href="#about">
                 <ActionIcon
-                  color="lime"
+                  color="blue"
                   mr={12}
                   radius="xl"
                   variant="filled"
@@ -62,7 +62,7 @@ const NavigationBar = () => {
             <Tooltip label="Work" withArrow>
               <Anchor href="#work">
                 <ActionIcon
-                  color="lime"
+                  color="blue"
                   mr={12}
                   radius="xl"
                   variant="filled"
@@ -75,7 +75,7 @@ const NavigationBar = () => {
             <Tooltip label="Projects" withArrow>
               <Anchor href="#projects">
                 <ActionIcon
-                  color="lime"
+                  color="blue"
                   mr={12}
                   radius="xl"
                   variant="filled"
@@ -88,7 +88,7 @@ const NavigationBar = () => {
             <Tooltip label="Testimonials" withArrow>
               <Anchor href="#testimonials">
                 <ActionIcon
-                  color="lime"
+                  color="blue"
                   mr={12}
                   radius="xl"
                   variant="filled"

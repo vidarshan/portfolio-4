@@ -16,7 +16,7 @@ const AboutPage = () => {
   return (
     <AboutPageContainer id="about">
       <Card p={12} shadow="xs" radius="lg" withBorder>
-        <Title c='lime' mb={10} order={1}>
+        <Title c="blue" mb={10} order={1}>
           About Me
         </Title>
         <Text size="sm" fw={500} mb={4}>
@@ -30,10 +30,10 @@ const AboutPage = () => {
         {education.map((edu) => {
           return (
             <Card radius="lg" key={edu.id} mb={8} withBorder>
-              <Text c="lime" size="md" fw={600}>
+              <Text c="blue" size="md" fw={600}>
                 {edu.title} @ {edu.institute}, {edu.location}
               </Text>
-              <Text tt='uppercase' fw={600} c="dimmed" size="xs">
+              <Text tt="uppercase" fw={600} c="dimmed" size="xs">
                 {edu.field}
               </Text>
               <Text fw={500} my={10} size="xs">

@@ -1,12 +1,4 @@
-import {
-  Anchor,
-  Avatar,
-  Card,
-  Flex,
-  Grid,
-  Text,
-  Title,
-} from "@mantine/core";
+import { Anchor, Avatar, Card, Flex, Grid, Text, Title } from "@mantine/core";
 import { TestimonialsPageContainer } from "./styles";
 import { testimonials } from "../data/testimonials";
 import { RiArrowRightUpLine } from "react-icons/ri";
@@ -15,13 +7,16 @@ const TestimonialsPage = () => {
   return (
     <TestimonialsPageContainer id="testimonials">
       <Card p={12} shadow="xs" radius="lg" withBorder>
-        <Title c='lime' mb={10} order={1}>
+        <Title c="blue" mb={10} order={1}>
           Testimonials
         </Title>
         <Grid>
           {testimonials.map((item) => {
             return (
-              <Grid.Col key={item.id} span={{xs:12, sm: 6, md: 4, lg:6, xl:6}}>
+              <Grid.Col
+                key={item.id}
+                span={{ xs: 12, sm: 6, md: 4, lg: 6, xl: 6 }}
+              >
                 <Card h="100%" withBorder>
                   <Flex direction="row" align="center">
                     <Avatar
@@ -33,7 +28,7 @@ const TestimonialsPage = () => {
                     />
                     <Flex direction="column">
                       <Anchor href={item.link} target="_blank">
-                        <Text c="lime" fw={600} size="md">
+                        <Text c="blue" fw={600} size="md">
                           {item.name} <RiArrowRightUpLine />
                         </Text>
                       </Anchor>
