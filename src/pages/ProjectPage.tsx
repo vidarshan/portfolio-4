@@ -112,15 +112,21 @@ const ProjectPage = () => {
                               </ActionIcon>{" "}
                             </Anchor>
                           )}
-                          <Anchor
-                            target="_blank"
-                            underline="never"
-                            href={project.demo}
-                          >
-                            <ActionIcon color="blue" size="md" radius="xl">
-                              <RiGlobalLine />
+                          {project.demo === "no-demo" ? (
+                            <ActionIcon color="grape" size="md" radius="xl">
+                              <RiProhibited2Line />
                             </ActionIcon>
-                          </Anchor>
+                          ) : (
+                            <Anchor
+                              target="_blank"
+                              underline="never"
+                              href={project.demo}
+                            >
+                              <ActionIcon color="indigo" size="md" radius="xl">
+                                <RiGlobalLine />
+                              </ActionIcon>
+                            </Anchor>
+                          )}
                         </Box>
                       </Flex>
                       <Image src={project.image} />

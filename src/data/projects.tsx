@@ -1,58 +1,5 @@
 export const projects = [
   {
-    id: 1,
-    name: "Stacey",
-    description:
-      "A dedicated video streaming platform for a cartoon creator to showcase animated series. Viewers can support shows via PayPal donations and a subscription-based pay-per-view model. The site features an interactive forum for discussions, feedback, and a fan art section to celebrate community creativity. Bring animated stories to life and engage with a vibrant fan base!",
-    image:
-      "https://res.cloudinary.com/dury4s2jk/image/upload/v1727159889/Stacey_eiwxfy.png",
-    repo: "no-repo",
-    demo: "https://lanostrarisata.com/",
-    tags: "Full-stack",
-    technologies: [
-      {
-        id: 1,
-        name: "Typescript",
-        color: "blue",
-      },
-      {
-        id: 2,
-        name: "React JS",
-        color: "blue",
-      },
-      {
-        id: 3,
-        name: "Mantine",
-        color: "blue",
-      },
-      {
-        id: 4,
-        name: "Node JS",
-        color: "green",
-      },
-      {
-        id: 5,
-        name: "Express JS",
-        color: "gray",
-      },
-      {
-        id: 6,
-        name: "Mongo DB",
-        color: "green",
-      },
-      {
-        id: 7,
-        name: "Paypal API",
-        color: "blue",
-      },
-      {
-        id: 8,
-        name: "Socket IO",
-        color: "gray",
-      },
-    ],
-  },
-  {
     id: 2,
     name: "Techstop",
     description:
@@ -168,6 +115,59 @@ export const projects = [
         id: 3,
         name: "Redux ToolKit",
         color: "blue",
+      },
+    ],
+  },
+  {
+    id: 1,
+    name: "Stacey",
+    description:
+      "A dedicated video streaming platform for a cartoon creator to showcase animated series. Viewers can support shows via PayPal donations and a subscription-based pay-per-view model. The site features an interactive forum for discussions, feedback, and a fan art section to celebrate community creativity. Bring animated stories to life and engage with a vibrant fan base!",
+    image:
+      "https://res.cloudinary.com/dury4s2jk/image/upload/v1737524478/Stacey_plwvq9.png",
+    repo: "no-repo",
+    demo: "no-demo",
+    tags: "Full-stack",
+    technologies: [
+      {
+        id: 1,
+        name: "Typescript",
+        color: "blue",
+      },
+      {
+        id: 2,
+        name: "React JS",
+        color: "blue",
+      },
+      {
+        id: 3,
+        name: "Mantine",
+        color: "blue",
+      },
+      {
+        id: 4,
+        name: "Node JS",
+        color: "green",
+      },
+      {
+        id: 5,
+        name: "Express JS",
+        color: "gray",
+      },
+      {
+        id: 6,
+        name: "Mongo DB",
+        color: "green",
+      },
+      {
+        id: 7,
+        name: "Paypal API",
+        color: "blue",
+      },
+      {
+        id: 8,
+        name: "Socket IO",
+        color: "gray",
       },
     ],
   },
