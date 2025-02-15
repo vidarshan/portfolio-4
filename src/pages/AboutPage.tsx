@@ -21,7 +21,7 @@ const AboutPage = () => {
         </Title>
         <Text size="sm" fw={500} mb={4}>
           Passionate about crafting efficient digital products that elevate
-          daily workflows. With 4+ years as a software engineer, I deliver
+          daily workflows. With almost 3 years as a software engineer, I deliver
           precise, high-quality solutions, aligning with stakeholders’ needs.
           Driven by innovation, I stay ahead of tech trends, continuously honing
           skills to tackle challenges and create impactful software.
