@@ -10,7 +10,7 @@ const Footer = () => {
     <FooterContainer>
       <Box mt={10} p={10}>
         <Text ta="center" c="dimmed" size="xs" fw={700}>
-          {year} &copy; Vidarshan | Made with React x Mantine
+          {year} | Made with React x Mantine
         </Text>
         <Text ta="center">
           <Anchor

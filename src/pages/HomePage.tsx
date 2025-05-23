@@ -69,13 +69,8 @@ const HomePage = () => {
             </Tooltip>
           </Flex>
         </Box>
-        <Flex className="slide-to-unlock" justify="center" align="center">
-          {scroll.y === 0 && (
-            <Text fw={700} size="sm" ta="center">
-              {" "}
-              Go down to continue
-            </Text>
-          )}
+        <Flex  justify="center" align="center">
+          {/* {scroll.y === 0 && <div className="slide-to-unlock"></div>} */}
         </Flex>
       </Flex>
     </HomePageContainer>

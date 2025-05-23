@@ -8,14 +8,33 @@ import {
 
 export const work = [
   {
+    title: "Student Assistant (SHS) - ITS Co-op",
+    icon: <RiNumber5 />,
+    contribution: "Assistant",
+    company: "Douglas College",
+    date: "2025-05 - Present",
+    link: "https://www.douglascollege.ca/",
+    details: [
+      "Assisting students with IT-related issues, including multi-factor authentication (MFA), campus resource access, credential problems, and general system navigation",
+      "Providing clear and patient guidance to students on resolving technical inquiries, utilizing strong verbal and written communication skills",
+      "Maintaining accurate documentation of support interactions, common issues, and troubleshooting steps to streamline future assistance",
+      "Resolving technical concerns independently or in coordination with lecturers and IT supervisors, while managing multiple tasks efficiently and staying updated on institutional IT systems and best practices",
+    ],
+    competencies: [],
+  },
+  {
     title: "Student Assistant",
     icon: <RiNumber5 />,
     contribution: "Assistant",
     company: "Douglas College",
     date: "2024-12 - Present",
     link: "https://www.douglascollege.ca/",
-    details:
-      "Helping students with learning software, networking, operating systems, and virtual machines in their courses by providing in-person (and/or online) peer tutoring.",
+    details: [
+      "Assisting students with issues related to programming, software, networking tools, and operating systems",
+      "Providing clear guidance and support to students, addressing various technical inquiries with strong verbal and written communication skills",
+      "Maintaining accurate records of student interactions and technical issues, ensuring efficient documentation of FAQs and troubleshooting processes",
+      " Resolving inquiries both independently and with lecturers and supervisors, while managing time efficiently and staying updated with relevant technical skills",
+    ],
     competencies: [
       {
         id: 1,
@@ -56,8 +75,13 @@ export const work = [
     company: "Appspotr",
     date: "2022-05 - 2024-05",
     link: "https://www.appspotr.com/",
-    details:
-      "Developed mobile apps with JavaScript/TypeScript using a content management system, built and maintained custom UI libraries and React.js projects, implemented utility features like drag-and-drop, optimized code with tools such as Redux Toolkit and Styled Components, and enhanced platform-specific features for iOS and Android.",
+    details: [
+      "Contributed to a low-code app building platform, as a frontend developer",
+      "Worked with React JS, React Native and React JS related tools such as Redux and Styled Components",
+      "Modified existing architectures to accommodate new features and functionalities of the platform",
+      "Gained experience in maintaining proprietary custom UI frameworks",
+      "Worked on developing/ fine-tuning features across Android and iOS in relation to the OS specific requirements and guidelines",
+    ],
     competencies: [
       {
         id: 1,
@@ -98,8 +122,10 @@ export const work = [
     company: "Dev4s",
     date: "2022-03 - 2022-05",
     link: "no-link",
-    details:
-      "Implemented user interfaces for new projects, developed frontend and backend functionalities based on client requirements, and integrated third-party APIs like Google API to retrieve data for web applications.",
+    details: [
+      "Implemented new functionalities per client requirements both in the frontend and the backend",
+      "Worked with 3rd party APIs such as Google API to fetch necessary information for web applications",
+    ],
     competencies: [
       {
         id: 1,
@@ -140,8 +166,12 @@ export const work = [
     company: "Beta Launch",
     date: "2022-09 - 2022-03",
     link: "https://www.betalaunch.io/",
-    details:
-      "Gained experience in end-to-end testing for web applications, implemented and validated frontend functionalities in React.js, enhanced backend REST API functionality, and modified relational database structures to support new features.",
+    details: [
+      "Gained knowledge and implemented end-to-end testing for web applications",
+      "Implemented and validated new functionalities on frontend in React JS based web applications",
+      "Modified and improved backend REST API's functionalities",
+      "Modified relational database's structures to cater new functionalities",
+    ],
     competencies: [
       {
         id: 1,
@@ -182,8 +212,12 @@ export const work = [
     company: "Beta Launch",
     date: "2021-04 - 2021-09",
     link: "https://www.betalaunch.io/",
-    details:
-      "Revamped outdated web applications with modern user interfaces, implemented and validated new functionalities in React.js frontend applications, enhanced backend REST API functionality, and updated relational database structures to support new features.",
+    details: [
+      "Revamped web applications with old user interfaces to modern and updated user interfaces",
+      "Implemented and validated new functionalities on frontend in React JS based web applications",
+      "Modified and improved backend REST API's functionalities",
+      "Modified relational database's structures to cater new functionalities",
+    ],
     competencies: [
       {
         id: 1,
@@ -219,8 +253,12 @@ export const work = [
     company: "Excalibur Systems",
     date: "2020-08 - 2021-04",
     link: "no-link",
-    details:
-      "Contributed to enhancing React.js web applications, designed and implemented user interfaces, developed new web applications for small to mid-sized businesses, and gained experience in deploying applications to the web.",
+    details: [
+      "Contributed to existing web applications based on React JS, to extend and improve their functionality",
+      "Designed user Interfaces and implemented the designs with code",
+      "Built completely new web applications for small-mid scale businesses",
+      "Gained knowledge on deploying applications to the web",
+    ],
     competencies: [
       {
         id: 1,
