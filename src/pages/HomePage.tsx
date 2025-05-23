@@ -1,16 +1,14 @@
 import { HomePageContainer } from "./styles";
 import "../App.css";
-import { Anchor, Box, Button, Flex, Text, Title, Tooltip } from "@mantine/core";
+import { Anchor, Box, Button, Flex, Title, Tooltip } from "@mantine/core";
 import {
   RiArrowRightUpLine,
   RiGithubFill,
   RiLinkedinBoxFill,
   RiMailOpenFill,
 } from "react-icons/ri";
-import { useWindowScroll } from "@mantine/hooks";
 
 const HomePage = () => {
-  const [scroll] = useWindowScroll();
   const email = import.meta.env.VITE_EMAIL_ADDRESS;
   const linkedinURL = import.meta.env.VITE_LINKEDIN_ADDRESS;
   const githubURL = import.meta.env.VITE_GITHUB_ADDRESS;
@@ -69,9 +67,7 @@ const HomePage = () => {
             </Tooltip>
           </Flex>
         </Box>
-        <Flex  justify="center" align="center">
-          {/* {scroll.y === 0 && <div className="slide-to-unlock"></div>} */}
-        </Flex>
+        <Flex justify="center" align="center"></Flex>
       </Flex>
     </HomePageContainer>
   );
