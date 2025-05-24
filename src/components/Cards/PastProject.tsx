@@ -45,17 +45,10 @@ const PastProject: FC<PastProjectProps> = ({
     <Card h="100%" withBorder={colorScheme === "light"}>
       <Flex justify="space-between" align="center">
         <Box>
-<<<<<<< HEAD
-          <Text c="blue" size="md" fw={600}>
-            {name}
-          </Text>
-          <Text c="dimmed" size="xs" tt="uppercase" fw={600}>
-=======
           <Text c="blue" size="md" fw={700}>
             {name}
           </Text>
           <Text c="dimmed" size="xs" tt="uppercase" fw={700}>
->>>>>>> c87d813 (Refresh history)
             {tags}
           </Text>
         </Box>

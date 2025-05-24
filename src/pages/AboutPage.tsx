@@ -10,26 +10,19 @@ import {
   Title,
   useMantineColorScheme,
 } from "@mantine/core";
-<<<<<<< HEAD
 import { useState } from "react";
-=======
-import { useEffect, useMemo, useState } from "react";
->>>>>>> c87d813 (Refresh history)
 import StatCard from "../components/Cards/StatCard";
 import { about } from "../data/about";
 import EducationCard from "../components/Cards/EducationCard";
 import CertificationCard from "../components/Cards/CertificationCard";
-<<<<<<< HEAD
-=======
+import { useEffect, useMemo } from "react";
 import Spinner from "../components/Loader";
 import { gitQuery } from "../data/gitQuery";
->>>>>>> c87d813 (Refresh history)
 
 const AboutPage = () => {
   const [selected, setSelected] = useState("Profile");
   const { colorScheme } = useMantineColorScheme();
-<<<<<<< HEAD
-=======
+
   const [loading, setLoading] = useState(true);
   const [stats, setStats] = useState({
     repos: 40,
@@ -115,7 +108,6 @@ const AboutPage = () => {
         setLoadingMessage("Fetching data...");
       });
   }, [years, token, username]);
->>>>>>> c87d813 (Refresh history)
 
   return (
     <AboutPageContainer id="about">
@@ -137,29 +129,12 @@ const AboutPage = () => {
             <>
               <Text
                 mt={20}
-<<<<<<< HEAD
-                fw={400}
-=======
                 fw={500}
->>>>>>> c87d813 (Refresh history)
                 size="md"
                 mb={10}
                 dangerouslySetInnerHTML={{ __html: about }}
               ></Text>
-<<<<<<< HEAD
-              <Flex align="center">
-                <StatCard
-                  name="Github"
-                  color="gray"
-                  values={[
-                    { name: "Contributions on Github", value: "2,000+" },
-                    { name: "Reputation on Stackoverflow", value: "420+" },
-                    { name: "Badges on Stackoverflow", value: "30+" },
-                    { name: "Projects on Github", value: "40+" },
-                  ]}
-                />
-              </Flex>
-=======
+
               {loading ? (
                 <>
                   {" "}
@@ -188,7 +163,6 @@ const AboutPage = () => {
                   />
                 </Flex>
               )}
->>>>>>> c87d813 (Refresh history)
             </>
           ) : selected === "Education" ? (
             <Timeline
