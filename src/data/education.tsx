@@ -125,7 +125,7 @@ export const certifications = [
     title: "Python Essential Training",
     description:
       "Learned how computers think and how to install Python, pip, and Jupyter Notebook while mastering the basics of programming. Explored variables, data types, operators, functions, classes, and objects. Delved into data structures, control flow, error handling, threads, and processes. Discovered how to work with files, pass command-line arguments, and create modules and packages in Python.",
-    link: "https://www.credly.com/badges/0f2b4a3c-5d7e-4b8c-9f1d-6a0e2f3a1b5c/public_url",
+    link: "https://www.linkedin.com/learning/certificates/d76c8d79243774b15e0b4c7607563be6a4d353e7e759cad9b55f1531b17b5bf0?trk=share_certificate",
     id: 4,
     organization: "LinkedIn Learning",
     completed: true,

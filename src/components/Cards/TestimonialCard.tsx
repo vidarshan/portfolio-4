@@ -1,12 +1,5 @@
-import {
-  Anchor,
-  Avatar,
-  Blockquote,
-  Flex,
-  MantineColorScheme,
-  Text,
-} from "@mantine/core";
-import React, { FC } from "react";
+import { Anchor, Avatar, Blockquote, Flex, Text } from "@mantine/core";
+import { FC } from "react";
 import { FaQuoteLeft } from "react-icons/fa";
 import { RiArrowRightUpLine } from "react-icons/ri";
 
