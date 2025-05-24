@@ -33,6 +33,7 @@ const AboutPage = () => {
   const [loadingMessage, setLoadingMessage] = useState("Fetching data...");
   const token = import.meta.env.VITE_GITHUB_PAT;
   const username = import.meta.env.VITE_GITHUB_USERNAME;
+  const id = import.meta.env.VITE_STACKOVERFLOW_ID;
 
   const years = useMemo(() => [2019, 2020, 2021, 2022, 2023, 2024, 2025], []);
 
@@ -53,7 +54,7 @@ const AboutPage = () => {
       });
     setLoadingMessage("Fetching data from stackexchange.com...");
     fetch(
-      "https://api.stackexchange.com/2.3/users/15415996?order=desc&sort=reputation&site=stackoverflow"
+      `https://api.stackexchange.com/2.3/users/${id}?order=desc&sort=reputation&site=stackoverflow`
     )
       .then((res) => res.json())
       .then((data) => {
