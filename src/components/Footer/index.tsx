@@ -2,7 +2,6 @@ import { FooterContainer } from "./styles";
 import { Anchor, Box, Text } from "@mantine/core";
 
 const Footer = () => {
-  const year = new Date().getFullYear().toString();
 
   const repoAddress = import.meta.env.VITE_REPO_ADDRESS;
 
