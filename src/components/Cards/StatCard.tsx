@@ -6,6 +6,10 @@ import {
   MantineColor,
   Modal,
   Text,
+<<<<<<< HEAD
+=======
+  Title,
+>>>>>>> c87d813 (Refresh history)
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { FC } from "react";
@@ -27,7 +31,11 @@ const StatCard: FC<StatCardProps> = ({ values = [] }) => {
   const [opened, { open, close }] = useDisclosure(false);
 
   return (
+<<<<<<< HEAD
     <Flex py={40} style={{ cursor: "pointer" }} align="center" gap={20}>
+=======
+    <Flex py={40} align="center" gap={20}>
+>>>>>>> c87d813 (Refresh history)
       <Modal
         opened={opened}
         onClose={close}
@@ -74,9 +82,15 @@ const StatCard: FC<StatCardProps> = ({ values = [] }) => {
       {values.map((item, index) => (
         <>
           <Flex key={index} direction="column">
+<<<<<<< HEAD
             <Text size="lg" px={0} style={{ cursor: "pointer" }} fw={700}>
               {item.value}
             </Text>
+=======
+            <Title order={2} px={0} fw={800}>
+              {item.value}
+            </Title>
+>>>>>>> c87d813 (Refresh history)
             <Text size="sm" c="gray">
               {item.name}
             </Text>

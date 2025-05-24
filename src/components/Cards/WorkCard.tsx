@@ -41,11 +41,19 @@ const WorkCard: FC<WorkCardProps> = ({
       title={
         <Flex justify="space-between">
           {link === "no-link" ? (
+<<<<<<< HEAD
             <Text size="lg" fw={600}>
               {title} @ {company}
             </Text>
           ) : (
             <Text size="lg" fw={600}>
+=======
+            <Text size="lg" fw={700}>
+              {title} @ {company}
+            </Text>
+          ) : (
+            <Text size="lg" fw={800}>
+>>>>>>> c87d813 (Refresh history)
               <Anchor c="blue" target="_blank" href={link} fw={600}>
                 {title} @ {company} <RiArrowRightUpLine />
               </Anchor>
@@ -53,11 +61,19 @@ const WorkCard: FC<WorkCardProps> = ({
           )}
           <Flex align="center" justify="space-between">
             {date.includes("Present") ? (
+<<<<<<< HEAD
               <Text size="sm" c="blue" tt="uppercase" fw={600}>
                 {date}
               </Text>
             ) : (
               <Text fw={600} size="xs">
+=======
+              <Text size="sm" c="blue" tt="uppercase" fw={700}>
+                {date}
+              </Text>
+            ) : (
+              <Text fw={700} size="xs">
+>>>>>>> c87d813 (Refresh history)
                 {date}
               </Text>
             )}
@@ -77,7 +93,11 @@ const WorkCard: FC<WorkCardProps> = ({
       <Group justify="flex-start" mt={16}>
         {competencies.map((comp) => {
           return (
+<<<<<<< HEAD
             <Text c={comp.color} fw={700} size="xs">
+=======
+            <Text c={comp.color} fw={800} size="xs">
+>>>>>>> c87d813 (Refresh history)
               {comp.name.toUpperCase()}
             </Text>
           );

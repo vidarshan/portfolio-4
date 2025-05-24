@@ -9,6 +9,7 @@ h1{
 }
 
 .slide-to-unlock {
+<<<<<<< HEAD
   height: 10px;
   width: 30px;
   padding: 0px;
@@ -17,10 +18,15 @@ h1{
     #315400,
     #a9f440,
     #284400,
+=======
+  background: linear-gradient(
+    to right,
+>>>>>>> c87d813 (Refresh history)
     #315400,
     #a9f440,
     #284400
   );
+<<<<<<< HEAD
   background-size: 600% 100%;
   animation: slide-bg 8s linear infinite;
 }
@@ -31,5 +37,20 @@ h1{
   }
   to {
     background-position: 100% 0;
+=======
+  background-size: 300% 100%; 
+  -webkit-background-clip: text; 
+  -moz-background-clip: text; 
+  color: transparent;
+  animation: slide-text 4s linear infinite; 
+}
+
+@keyframes slide-text {
+  0% {
+    background-position: 0% 0; 
+  }
+  100% {
+    background-position: 100% 0; 
+>>>>>>> c87d813 (Refresh history)
   }
 }

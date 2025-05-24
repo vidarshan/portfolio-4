@@ -3,7 +3,10 @@ import {
   ActionIcon,
   Affix,
   Container,
+<<<<<<< HEAD
   Loader,
+=======
+>>>>>>> c87d813 (Refresh history)
   MantineProvider,
   Transition,
 } from "@mantine/core";
@@ -17,8 +20,11 @@ import { useWindowScroll } from "@mantine/hooks";
 import { RiArrowUpLine } from "react-icons/ri";
 import NavigationBar from "./components/NavigationBar";
 import HomePage from "./pages/HomePage";
+<<<<<<< HEAD
 import { RingLoader } from "./components/Loaders/RingLoader";
 
+=======
+>>>>>>> c87d813 (Refresh history)
 const App = () => {
   const [scroll, scrollTo] = useWindowScroll();
 
@@ -27,6 +33,7 @@ const App = () => {
       <MantineProvider
         defaultColorScheme="dark"
         theme={{
+<<<<<<< HEAD
           components: {
             Loader: Loader.extend({
               defaultProps: {
@@ -35,6 +42,8 @@ const App = () => {
               },
             }),
           },
+=======
+>>>>>>> c87d813 (Refresh history)
           shadows: {
             xs: "0",
           },

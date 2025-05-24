@@ -36,10 +36,17 @@ const EducationCard: FC<EducationCardProps> = ({
       }
       title={
         <>
+<<<<<<< HEAD
           <Text fw={600} c="blue" size="lg">
             {title.concat(" ", field)}
           </Text>
           <Text fw={600} c="dimmed" size="sm">
+=======
+          <Text fw={700} c="blue" size="lg">
+            {title.concat(" ", field)}
+          </Text>
+          <Text fw={700} c="dimmed" size="sm">
+>>>>>>> c87d813 (Refresh history)
             {location} · {dates}
           </Text>
         </>

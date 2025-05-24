@@ -27,11 +27,19 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
           <Avatar mr={8} radius="xl" h={40} w={40} src={avatar} />
           <Flex direction="column">
             <Anchor href={link} target="_blank">
+<<<<<<< HEAD
               <Text c="blue" fw={600} size="md">
                 {name} <RiArrowRightUpLine />
               </Text>
             </Anchor>
             <Text fw={600} tt="uppercase" c="dimmed" size="sm">
+=======
+              <Text c="blue" fw={700} size="md">
+                {name} <RiArrowRightUpLine />
+              </Text>
+            </Anchor>
+            <Text fw={700} tt="uppercase" c="dimmed" size="sm">
+>>>>>>> c87d813 (Refresh history)
               {designation}
             </Text>
           </Flex>

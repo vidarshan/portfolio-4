@@ -43,7 +43,11 @@ const CertificationCard: FC<CertificationCardProps> = ({
         withBorder={colorScheme === "light"}
       >
         <Flex justify="space-between" >
+<<<<<<< HEAD
           <Text size="lg" c="blue" fw={600}>
+=======
+          <Text size="lg" c="blue" fw={700}>
+>>>>>>> c87d813 (Refresh history)
             {" "}
             {title}
           </Text>
@@ -57,7 +61,11 @@ const CertificationCard: FC<CertificationCardProps> = ({
             </Tooltip>
           )}
         </Flex>
+<<<<<<< HEAD
         <Text fw={600} c="dimmed">
+=======
+        <Text fw={700} c="dimmed">
+>>>>>>> c87d813 (Refresh history)
           {" "}
           {organization} | {date}
         </Text>

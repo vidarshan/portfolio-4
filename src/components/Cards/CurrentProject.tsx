@@ -50,10 +50,17 @@ const CurrentProject: FC<CurrentProjectProps> = ({
     <Card shadow="xl" h="100%" radius="lg" withBorder={colorScheme === "light"}>
       <Flex justify="space-between" align="center">
         <Box>
+<<<<<<< HEAD
           <Text c="blue" size="md" fw={600}>
             {name}
           </Text>
           <Text c="dimmed" size="xs" tt="uppercase" fw={600}>
+=======
+          <Text c="blue" size="md" fw={700}>
+            {name}
+          </Text>
+          <Text c="dimmed" size="xs" tt="uppercase" fw={700}>
+>>>>>>> c87d813 (Refresh history)
             {tags}
           </Text>
         </Box>
@@ -84,7 +91,11 @@ const CurrentProject: FC<CurrentProjectProps> = ({
         </Box>
       </Flex>
       <Image src={image} />
+<<<<<<< HEAD
       <Text fw={500} size="xs">
+=======
+      <Text fw={600} size="xs">
+>>>>>>> c87d813 (Refresh history)
         {description}
       </Text>
       <Divider my="xs" label="Technologies" labelPosition="left" />

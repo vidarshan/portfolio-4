@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+=======
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+>>>>>>> c87d813 (Refresh history)
 
 html {
   scroll-behavior: smooth;
@@ -11,9 +15,17 @@ html {
 }
 
 h1, h2, h3, h4, h5, p, button, span, div, a{
+<<<<<<< HEAD
   font-family: "Inter", serif !important;
 }
 
 .mantine-Text-root{
   font-family: "Inter", serif !important;
+=======
+  font-family: "Manrope", sans-serif !important;
+}
+
+.mantine-Text-root{
+   font-family: "Manrope", sans-serif !important;
+>>>>>>> c87d813 (Refresh history)
 }
