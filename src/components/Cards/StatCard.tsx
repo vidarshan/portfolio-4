@@ -6,7 +6,6 @@ import {
   MantineColor,
   Modal,
   Text,
-  Title,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { FC } from "react";
@@ -72,27 +71,29 @@ const StatCard: FC<StatCardProps> = ({ values = [] }) => {
           })}
         </Flex>
       </Modal>
-      {values.map((item, index) => (
-        <>
-          <Flex key={index} direction="column">
-            <Title order={2} px={0} fw={800}>
-              {item.value}
-            </Title>
+      <Flex wrap="wrap" gap={20}>
+        {values.map((item, index) => (
+          <>
+            <Flex key={index} direction="column">
+              <Text size="xl" px={0} fw={600}>
+                {item.value}
+              </Text>
 
-            <Text size="sm" c="gray">
-              {item.name}
-            </Text>
-          </Flex>
-          {index !== values.length - 1 && <Divider orientation="vertical" />}
-        </>
-      ))}
-      <Button
-        variant="transparent"
-        leftSection={<RiArrowRightUpLine />}
-        onClick={open}
-      >
-        Show Stack
-      </Button>
+              <Text size="sm" c="gray">
+                {item.name}
+              </Text>
+            </Flex>
+            {index !== values.length - 1 && <Divider orientation="vertical" />}
+          </>
+        ))}
+        <Button
+          variant="transparent"
+          leftSection={<RiArrowRightUpLine />}
+          onClick={open}
+        >
+          Show Stack
+        </Button>
+      </Flex>
     </Flex>
   );
 };
