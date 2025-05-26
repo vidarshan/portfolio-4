@@ -16,6 +16,7 @@ import { useWindowScroll } from "@mantine/hooks";
 import { RiArrowUpLine } from "react-icons/ri";
 import NavigationBar from "./components/NavigationBar";
 import HomePage from "./pages/HomePage";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const App = () => {
   const [scroll, scrollTo] = useWindowScroll();
@@ -69,6 +70,7 @@ const App = () => {
           },
         }}
       >
+        <SpeedInsights />
         <NavigationBar />
         <Affix position={{ bottom: 20, right: 20 }}>
           <Transition transition="slide-up" mounted={scroll.y > 0}>
