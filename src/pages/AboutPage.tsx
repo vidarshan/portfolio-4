@@ -58,14 +58,14 @@ const AboutPage = () => {
     )
       .then((res) => res.json())
       .then((data) => {
-        if (data.items && data.items.length > 0) {
+        if (data?.items && data?.items?.length > 0) {
           setStats((prev) => ({
             ...prev,
-            reputation: data?.user?.reputation,
+            reputation: data?.items[0]?.reputation,
             badges:
-              data?.user?.badge_counts.gold +
-              data?.user?.badge_counts.silver +
-              data?.user?.badge_counts.bronze,
+              data?.items[0]?.badge_counts?.gold +
+              data?.items[0]?.badge_counts?.silver +
+              data?.items[0]?.badge_counts?.bronze,
           }));
         } else {
           setStats((prev) => ({
@@ -75,7 +75,7 @@ const AboutPage = () => {
           }));
         }
       })
-      .catch((err) => console.error(err))
+      .catch((err) => console.log("ERR", err))
       .finally(() => {
         setLoading(false);
         setLoadingMessage("Fetching data...");
@@ -108,7 +108,7 @@ const AboutPage = () => {
         setLoading(false);
         setLoadingMessage("Fetching data...");
       });
-  }, [years, token, username]);
+  }, [years, token, username, id]);
 
   return (
     <AboutPageContainer id="about">
